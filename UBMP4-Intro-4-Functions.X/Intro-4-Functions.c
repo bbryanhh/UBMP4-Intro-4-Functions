@@ -99,16 +99,28 @@ int main(void)
  * 
  * 1.   Which function in this program will run first? How do you know?
  * 
+ * int main(void) will run first because it's in the beginning
+ * 
  * 2.   What is the purpose of the 'unsigned char' variable type declaration in
  *      the button_pressed() function? Is it used by this function to receive
  *      a variable from, or return a variable to the main code?
  * 
+ * It is used to return a variable to the main code 
+ * 
  * 3.   How does the function call statement 'button = button_pressed();' in the
  *      main code support your answer in 2, above?
+ * 
+ * It supports answer 2 because it returns a variable if it's UP or DOWN. 
+ * 
  * 
  * 4.   What is the purpose of the 'unsigned char' variable type declaration in
  *      the pwm_LED5() function? Where does the value of the variable come from?
  *      Where does this value get stored in the function?
+ * 
+ * The purpose of the function is that if pwmValue = t then the LED will 
+ * turn on. 
+ * 
+ * 
  * 
  * 5.   C language compilers typically read through the entire program in a
  *      single pass, converting C code into machine code. The two functions,
