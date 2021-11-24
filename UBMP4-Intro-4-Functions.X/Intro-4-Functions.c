@@ -157,6 +157,9 @@ void pwm_LED5(unsigned char);
  *      and the actual pwm_LED5() function declaration statement later in the
  *      code?
  * 
+ * The function prototype for pwm LED5 doesn't return a value but the actual 
+ * function declaration does.
+ * 
  * 6.   Building the program with the added function prototypes should now work
  *      without generating errors, just as it did in the original program.
  * 
@@ -185,10 +188,15 @@ void pwm_LED5(unsigned char);
  *      variables are available to all functions. How does the 'button' variable
  *      get assigned a value? In which function does this occur?
  * 
+ * The 'button' variable gets assigned to a variable when any of the operations
+ * that are assigned to button is true.
+ * 
  * 8.   Which variable does the value of LED5Brightness get transferred to in
  *      the pwm_LED5() function? Is this variable global, or local to the LED
  *      function? Could the pwm_LED5 function use the LED5Brightness variable
  *      directly, instead of transferring its value to another variable?
+ * 
+ * The variable is global because it's at the top of the program. 
  * 
  * Programming Activities
  * 
